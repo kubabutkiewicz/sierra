@@ -1,0 +1,31 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  @media screen and (max-width: $mid-desktop){
+    font-size: 50%;
+  }
+  @media screen and (max-width: $small-tablet){
+    font-size: 43%;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 35%;
+  }
+}
+
+body {
+  background-color: $bg-color;
+  height: 100vh;
+  font-family: "Roboto" , sans-serif;
+  color: $color-white;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

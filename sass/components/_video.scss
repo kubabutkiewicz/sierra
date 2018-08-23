@@ -1,0 +1,26 @@
+.video {
+  z-index: 2;
+
+  @media screen and (max-width: $big-tablet) {
+    height: 100%;
+    width: 100%;
+    grid-area: video;
+  }
+  @media screen and (max-width: $small-tablet) {
+    height: 95%;
+    width: 95%;
+
+  }
+  &__placeholder {
+    height: 80rem;
+    width: 100rem;
+    @media screen and (max-width: $big-tablet) {
+      height: 100%;
+      width: 100%;
+    }
+    @media screen and (max-width: $small-tablet) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

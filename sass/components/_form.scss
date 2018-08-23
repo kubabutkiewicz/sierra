@@ -1,0 +1,63 @@
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  input::-webkit-input-placeholder,
+  textarea::placeholder {
+    color: $color-grey-light;
+  }
+  &__name-input,
+  &__mail-input,
+  &__message-input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    width: 90%;
+    border-bottom: 2px solid $color-grey-light;
+    padding: 2rem 0;
+    color: $color-grey-light;
+    font-size: 1.6rem;
+    transition: 0.3s all ease-in-out;
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    &::focus {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  &__name-input {
+  }
+  &__mail-input {
+  }
+  &__message-input {
+    padding-top: 2rem;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  textarea:focus::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  &__submit {
+    width: 18rem;
+    background-color: $primary-color;
+    border: 0;
+    padding: 2rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    border-radius: 2.8rem;
+    margin-top: 7rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1.4px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      box-shadow: 0.6rem 0.6rem 0px 0px rgba($primary-color,0.7);
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.nav{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1000;
+  @media screen and (max-width: $big-tablet) {
+    top: 15%;
+  }
+  @media screen and (max-width: $small-tablet) {
+    top: 20%;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+  }
+
+  &__item {
+    margin-left: 4.6rem;
+  }
+
+  &__link {
+    font-size: 2.8rem;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 6rem;
+      width: 0;
+      background-color: $primary-color;
+      transform: rotate(45deg) scale(0);
+
+      top: -25%;
+      left: 50%;
+      z-index: -1;
+      transition: all 0.3s;
+    }
+    &:hover::after {
+      width: 1rem;
+      transform: rotate(45deg) scale(1);
+    }
+  }
+  &--position-change {
+    position: absolute;
+    top: 7.5rem;
+    right: 13%;
+    @media screen and (max-width: $big-tablet) {
+      right: 20%;
+    }
+  }
+}

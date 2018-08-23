@@ -1,0 +1,23 @@
+.row {
+  max-width: 132rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  
+  flex: 1;
+  height: 20rem;
+  &:not(:last-child) {
+    margin-bottom: $gap-vertical;
+  }
+  
+  [class^='col-']:not(:last-child) {
+    margin-right: $gap-horizontal;
+    
+  }
+  .col-1-2 {
+    width: calc((100% - #{$gap-horizontal})/2);
+  }
+  .col-1-3 {
+    width: calc((100% - #{$gap-horizontal})/3);
+  }
+}

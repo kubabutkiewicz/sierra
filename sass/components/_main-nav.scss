@@ -1,0 +1,53 @@
+.main-nav {
+  position: fixed;
+  z-index: 999;
+  left: 8rem;
+  bottom: 5.4rem;
+  
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    margin: 0 1rem;
+    
+  }
+
+  &__link {
+    padding: 1rem 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  &__radio {
+    display: none;
+  }
+
+  &__label-first,
+  &__label-sec {
+    font-size: 2rem;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  &__label-first {
+    position: relative;
+  }
+  &__label-sec {
+    position: absolute;
+    opacity: 0;
+  }
+  &__radio:checked + &__label-first{
+    opacity: 0;
+  }
+  &__radio:checked ~ &__label-sec{
+    opacity: 1;
+  }
+}

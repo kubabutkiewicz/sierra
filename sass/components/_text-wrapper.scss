@@ -1,0 +1,15 @@
+.text-wrapper {
+  padding-bottom: 15rem;
+  margin-left: 9.5rem;
+  letter-spacing: 0.3px;
+
+  @media screen and (max-width: $big-tablet) {
+    width: 50%;
+    grid-area: wrapper;
+
+    justify-self: start;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 70%;
+  }
+}

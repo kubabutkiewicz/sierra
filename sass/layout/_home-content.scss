@@ -1,0 +1,15 @@
+.home-content {
+  width: 100vw;
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 1fr 1.6fr;
+  align-items: center;
+  justify-items: center;
+  @media screen and (max-width: $big-tablet) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "video"
+    "wrapper";
+  }
+}
