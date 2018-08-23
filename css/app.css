@@ -392,11 +392,11 @@ a {
         .cards__card:not(:last-child) {
           margin-bottom: 3rem; } }
     .cards__card:first-child {
-      background-image: url("../../assets/work-5-ok@3x.png"); }
+      background-image: url("../assets/work-5-ok@3x.png"); }
     .cards__card:nth-child(2) {
-      background-image: url("../../assets/work-3@3x.png"); }
+      background-image: url("../assets/work-3@3x.png"); }
     .cards__card:last-child {
-      background-image: url("../../assets/img.svg");
+      background-image: url("../assets/img.svg");
       background-size: 300%;
       background-position: 50% 15%; }
     .cards__card:last-child .cards__date {
